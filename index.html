@@ -1,10 +1,139 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My first website</title>
+    <title>Home Page - Gamehub</title>
+    <script
+      src="https://kit.fontawesome.com/485e953d6f.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="description" content="Gamehub, for selling and buying games" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iceberg&family=Kanit:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
+    <header>
+      <a href="index.html"
+        ><img
+          alt="Gamehub logo"
+          src="images/Logo/GameHub_text.svg"
+          class="logo"
+      /></a>
+      <div class="searchform">
+        <form action="" class="searchbar">
+          <input type="text" placeholder="Search for games" name="q" />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <nav>
+        <ul class="nav_links">
+          <li><a href="index.html"><i class="fa-solid fa-house"></i></a></i></li>
+          <li>
+            <a href="contact.html"><i class="fa-brands fa-rocketchat"></i></a>
+          </li>
+          <li><a href="gamelist.html"><i class="fa-solid fa-gamepad"></i></a></li>
+          <li><a href="cart.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hamburgermenu">
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu"/>
+        <div class="hamburger-open">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">List of Games</a></li>
+            <li><a href="index.html">Contact Us</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="index.html">Cart</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="NewReleases">
+        <div class="Newcontent">
+          <h1>Forge Legend</h1>
+        </div>
+        <div class="buynowcta">
+          <a href="gamelist.html" class="cta cta-large">Buy now!</a>
+        </div>
+      </section>
+      <section class="Topsellers">
+        <h2>Top sellers</h2>
+        <div class="coverlist">
+          <div class="cover1">
+            <a href="gamelist.html"
+              ><img
+                alt="List of Games"
+                src="images/GameCovers/GameHub_covers7.jpg"
+                alt="Racing"
+                class="cover"
+            /></a>
+          </div>
+          <div class="cover2">
+            <a href="gamelist.html"
+              ><img
+                alt="List of Games"
+                src="images/GameCovers/GameHub_covers3.jpg"
+                alt="Black"
+                class="cover"
+            /></a>
+          </div>
+          <div class="cover3">
+            <a href="gamelist.html"
+              ><img
+                alt="List of Games"
+                src="images/GameCovers/GameHub_covers6.jpg"
+                alt="Space War"
+                class="cover"
+            /></a>
+          </div>
+          <div class="cover4">
+            <a href="gamelist.html"
+              ><img
+                alt="List of Games"
+                src="images/GameCovers/GameHub_covers9.jpg"
+                alt="Cyberpunk"
+                class="cover"
+            /></a>
+          </div>
+          <div class="cover5">
+            <a href="gamelist.html"
+              ><img
+                alt="List of Games"
+                src="images/GameCovers/GameHub_covers10.jpg"
+                alt="Forge Legend"
+                class="cover"
+            /></a>
+          </div>
+          <div class="cover6">
+            <a href="gamelist.html"
+              ><img
+                alt="List of Games"
+                src="images/GameCovers/GameHub_covers5.jpg"
+                alt="Assassin"
+                class="cover"
+            /></a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <hr class="solid" />
+      <section class="Contactinfo">
+        <p><i class="fa-solid fa-phone fa-border"></i>1-234-567-8910</p>
+        <p><i class="fa-solid fa-envelope fa-border"></i>support@gamehub.com</p>
+        <div class="footericon">
+          <i class="fa-solid fa-arrow-up fa-border"></i>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
