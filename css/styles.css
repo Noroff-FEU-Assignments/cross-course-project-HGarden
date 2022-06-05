@@ -25,7 +25,7 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #c4bebb;
   padding: 0px;
@@ -90,7 +90,7 @@ nav a {
 .hamburgermenu {
   display: block;
   z-index: 1100;
-  font-size: larger;
+  font-size: 20px;
   margin-top: -30px;
   color: #851d4a;
   font-style: bold;
@@ -417,8 +417,8 @@ hr.solid {
   }
 
   .searchform {
-    margin-right: 3%;
-    margin-left: 160px;
+    margin-right: 1%;
+    margin-left: 200px;
   }
 
   .searchbar input {
@@ -429,20 +429,20 @@ hr.solid {
   nav a {
     color: #851d4a;
     font-size: 35px;
-    padding: 0 10px 0 0;
+    padding: 0 20px 0 0;
   }
 }
 
 @media (min-width: 1704px) {
   nav a {
     font-size: 45px;
-    padding: 0 35px 0 0;
+    padding: 0 30px 0 0;
   }
 
   .searchform {
     order: 2;
-    margin-right: 3%;
-    margin-left: 220px;
+    margin-right: 1%;
+    margin-left: 300px;
   }
 
   .searchbar input {
