@@ -453,5 +453,6 @@ hr.solid {
     padding: 9px 10px;
     cursor: pointer;
     float: left;
+    display: block;
   }
 }
