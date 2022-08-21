@@ -458,7 +458,7 @@ hr.solid5 {
 .contact-form textarea {
   width: 288px;
   height: 15vh;
-  border-color: #851d4a;
+  border: #851d4a solid 1px;
   margin-top: 10px;
   margin-left: 17px;
   margin-bottom: 15px;
@@ -466,19 +466,17 @@ hr.solid5 {
 
 .contact input[type="text"] {
   padding: 5px;
-  border-color: #851d4a;
+  border: #851d4a solid 1px;
   width: clamp(100px, 285px, 285px);
   height: 50px;
   margin-bottom: 10px;
-  border-width: 1px;
 }
 
 .contact input[type="email"] {
   padding: 5px;
-  border-color: #851d4a;
+  border: #851d4a solid 1px;
   width: clamp(100px, 285px, 285px);
   height: 50px;
-  border-width: 1px;
 }
 
 .sell-form {
@@ -490,7 +488,7 @@ hr.solid5 {
 .sell-form textarea {
   width: 285px;
   height: 12vh;
-  border-color: #851d4a;
+  border: #851d4a solid 1px;
   margin-bottom: 20px;
   margin-top: 10px;
   margin-left: 24px;
