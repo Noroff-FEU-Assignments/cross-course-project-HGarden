@@ -18,12 +18,25 @@
   </head>
   <body>
     <header>
+      <section class="hamburgermenu">
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu"/>
+        <div class="hamburger-open">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gamelist.html">List of Games</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+      </section>
       <a href="index.html"
-        ><img
-          alt="Gamehub logo"
-          src="images/Logo/GameHub_text.svg"
-          class="logo"
-      /></a>
+      ><img
+        alt="Gamehub logo"
+        src="images/Logo/GameHub_text.svg"
+        class="logo"
+    /></a>
       <div class="searchform">
         <form action="" class="searchbar">
           <input type="text" placeholder="Search for games" name="q" />
@@ -44,19 +57,6 @@
       </nav>
     </header>
     <main>
-      <section class="hamburgermenu">
-        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-        <input type="checkbox" id="hamburger-menu"/>
-        <div class="hamburger-open">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">List of Games</a></li>
-            <li><a href="index.html">Contact Us</a></li>
-            <li><a href="index.html">About Us</a></li>
-            <li><a href="index.html">Cart</a></li>
-          </ul>
-        </div>
-      </section>
       <section class="NewReleases">
         <div class="Newcontent">
           <h1>Forge Legend</h1>
@@ -128,11 +128,9 @@
     <footer>
       <hr class="solid" />
       <section class="Contactinfo">
-        <p><i class="fa-solid fa-phone fa-border"></i>1-234-567-8910</p>
-        <p><i class="fa-solid fa-envelope fa-border"></i>support@gamehub.com</p>
-        <div class="footericon">
-          <i class="fa-solid fa-arrow-up fa-border"></i>
-        </div>
+        <a><i class="fa-solid fa-phone fa-border"></i>1-234-567-8910</a>
+        <a><i class="fa-solid fa-envelope fa-border"></i>support@gamehub.com</a>
+        <a><i class="fa-solid fa-arrow-up fa-border"></a></i>
       </section>
     </footer>
   </body>

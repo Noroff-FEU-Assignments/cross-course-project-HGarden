@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cart - Gamehub</title>
+    <script
+      src="https://kit.fontawesome.com/485e953d6f.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta name="description" content="The shopping cart" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iceberg&family=Kanit:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+        <section class="hamburgermenu">
+          <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+          <input type="checkbox" id="hamburger-menu"/>
+          <div class="hamburger-open">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="gamelist.html">List of Games</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="cart.html">Cart</a></li>
+            </ul>
+          </div>
+        </section>
+        <a href="index.html"
+        ><img
+          alt="Gamehub logo"
+          src="images/Logo/GameHub_text.svg"
+          class="logo"
+      /></a>
+        <div class="searchform">
+          <form action="" class="searchbar">
+            <input type="text" placeholder="Search for games" name="q" />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <nav>
+          <ul class="nav_links">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></i></li>
+            <li>
+              <a href="contact.html"><i class="fa-brands fa-rocketchat"></i></a>
+            </li>
+            <li><a href="gamelist.html"><i class="fa-solid fa-gamepad"></i></a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="checkout">
+        <h2>Checkout</h2>
+        <hr class="solid6">
+          <div class="cartlayout">
+            <div class="shipping">
+              <div><h3>Shipping</h3></div>
+             <div> <label for="name"></label>
+              <input type="text" id="fullname" name="fullname" placeholder="Full Name "/></div>
+             <div> <label for="Address"></label>
+              <input type="text" id="Address" name="Address" placeholder="Address "/></div>
+             <div> <label for="City"></label>
+              <input type="text" id="City" name="City" placeholder="City "/></div>
+             <div> <label for="Zip code"></label>
+              <input type="text" id="Zip-code" name="Zip-code" placeholder="Zip code "/></div>
+             <div> <label for="country"></label>
+              <input type="text" id="country" name="country" placeholder="Country"/></div>
+             <div> <label for="Email"></label>
+              <input type="email" id="email" name="email" placeholder="Email"/></div>
+            </div>
+            <div class="payment">
+              <div><h3>Payment Method</h3></div>
+              <div class="paypallogo"><a href="checkoutcomplete.html"><img src="images/Logo/paypal.svg" alt="paypal logo"></a></div>
+              <div class="or">or</div>
+              <div><i class="fa-brands fa-cc-visa"></i><i class="fa-brands fa-cc-mastercard"></i><input type="text" id="CardNumber" name="Card Number" placeholder="1111 2222 3333 4444"/></div>
+              <div><input type="text" id="Expiration" name="Expiration" placeholder="MM/YYYY"/></div>
+              <div><input type="text" id="CCV" name="CCV" placeholder="CCV"/></div>
+              <div><label for="name"></label>
+                <input type="text" id="firstname" name="name" placeholder="First Name "/></div>
+              <div><label for="name"></label>
+                <input type="text" id="lastname" name="name" placeholder="Last Name "/></div>
+              <div class="cta4"><a href="checkoutcomplete.html">Place Order</a></div>
+            </div>
+            <div class="shopping-cart">
+              <div><h3>Shopping Cart</h3></div>
+              <div class="lightfont"><p>Subtotal</p><p>Shipping Fee</p><p>Tax</p></div>
+              <div><p>$55</p><p>Free</p><p>$4.19</p></div>
+              <div><h4>Order Total</h4></div>
+              <div><p>$59.99</p></div>
+              <div><p>Item QTY Price</p></div>
+              <div><hr class="solid7"></div>
+              <div class="shopping-img"><a href="productdetail.html"><img src="images/GameCovers/GameHub_covers6.jpg" alt="gamecover of Space War"></a><p class="textbold">Space War</p><p>Platform: Playbox</p><p>Condition New</p></div>
+              <div><input type="text" id="amount"></div>
+              <div><p>$59.99</p></div>
+            </div>
+          </div>
+      </main>
+      <footer>
+        <hr class="solid" />
+        <section class="Contactinfo">
+          <a><i class="fa-solid fa-phone fa-border"></i>1-234-567-8910</a>
+          <a><i class="fa-solid fa-envelope fa-border"></i>support@gamehub.com</a>
+          <a><i class="fa-solid fa-arrow-up fa-border"></a></i>
+        </section>
+      </footer>
+  </body>
+</html>
