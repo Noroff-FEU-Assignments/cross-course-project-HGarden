@@ -470,6 +470,7 @@ hr.solid5 {
   width: clamp(100px, 285px, 285px);
   height: 50px;
   margin-bottom: 10px;
+  border-width: 1px;
 }
 
 .contact input[type="email"] {
@@ -477,6 +478,7 @@ hr.solid5 {
   border-color: #851d4a;
   width: clamp(100px, 285px, 285px);
   height: 50px;
+  border-width: 1px;
 }
 
 .sell-form {
@@ -496,9 +498,11 @@ hr.solid5 {
 
 .sell-form input[id="name"] {
   margin-left: 6px;
+  border-width: 1px;
 }
 .sell-form input[id="email"] {
   margin-left: 4px;
+  border-width: 1px;
 }
 
 .sell-form input {
