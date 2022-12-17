@@ -59,7 +59,12 @@ nav a {
 }
 .nav_links li:nth-child(1) {
   display: inline-block;
-  padding-right: 40px;
+  padding-right: 5vw;
+}
+
+.nav_links li:nth-child(4) {
+  display: inline-block;
+  padding-right: 0px;
 }
 
 .searchform {
@@ -242,6 +247,53 @@ hr.solid5 {
   margin-bottom: 20px;
 }
 
+/* Form validation */
+#name-error {
+  display: none;
+}
+#email-error {
+  display: none;
+}
+#message-error {
+  display: none;
+}
+
+#game-error {
+  display: none;
+}
+
+#platform-error {
+  display: none;
+}
+
+#game-name-error {
+  display: none;
+}
+#game-email-error {
+  display: none;
+}
+
+#address-error {
+  display: none;
+}
+#city-error {
+  display: none;
+}
+#zipcode-error {
+  display: none;
+}
+#country-error {
+  display: none;
+}
+#card-error {
+  display: none;
+}
+#expiration-error {
+  display: none;
+}
+#CCV-error {
+  display: none;
+}
 /* Gamelist */
 
 .Sidebar {
@@ -281,7 +333,13 @@ hr.solid5 {
   padding-bottom: 4vh;
 }
 .gameheader {
-  margin-left: 206px;
+  margin-left: 150px;
+}
+
+.gameheader h1 {
+  font-size: 60px;
+  font-family: "Kanit", sans-serif;
+  color: black;
 }
 
 .sortby {
@@ -345,10 +403,12 @@ hr.solid5 {
   background-image: url("../images/textures/snakeskin2.jpg");
 }
 
-.productdetail h2 {
+.productdetail h1 {
   margin-left: 7.8vw;
   margin-top: 50px;
   color: white;
+  font-size: 60px;
+  font-family: "Kanit", sans-serif;
 }
 
 .productpage {
@@ -414,10 +474,11 @@ hr.solid5 {
   padding: 1%;
   color: white;
 }
-.gamedescription > h4 {
+.gamedescription > h2 {
   margin-left: 20px;
   padding: 1%;
   color: white;
+  font-size: 40px;
 }
 
 .videoplayer video {
@@ -430,6 +491,18 @@ hr.solid5 {
 }
 
 /* Contact */
+
+.error {
+  color: red;
+}
+
+.contact h1 {
+  font-size: 60px;
+  font-family: "Kanit", sans-serif;
+  color: black;
+  margin-left: 20px;
+  margin-top: 30px;
+}
 
 .contact {
   display: grid;
@@ -532,6 +605,13 @@ hr.solid5 {
 }
 
 /*Cart*/
+
+.checkout h1 {
+  font-size: 60px;
+  font-family: "Kanit", sans-serif;
+  color: black;
+  margin-left: 10px;
+}
 
 .checkout h2 {
   margin-left: 10px;
@@ -872,6 +952,13 @@ hr.solid5 {
     padding-right: 50px;
   }
 }
+
+@media (max-width: 420px) {
+  .logo {
+    display: none;
+  }
+}
+
 @media (min-width: 510px) {
   .order {
     transform: scale(1);
@@ -880,6 +967,10 @@ hr.solid5 {
   .shopping-cart2 {
     transform: scale(1);
     margin-left: 0px;
+  }
+
+  .gameheader {
+    margin-left: 206px;
   }
 }
 
@@ -932,9 +1023,14 @@ hr.solid5 {
     padding: 0 40px 0 0;
     font-size: 2em;
   }
-  nav li:nth-child(n + 2) {
-    padding: 0 40px 0 0;
+  nav li:nth-child(n + 1) {
+    padding: 0 30px 0 0;
     display: inline-block;
+  }
+
+  .nav_links li:nth-child(1) {
+    display: inline-block;
+    padding-right: 40px;
   }
 
   .hamburgermenu {
@@ -978,7 +1074,7 @@ hr.solid5 {
     margin-left: 200px;
   }
 
-  .checkout h2 {
+  .checkout h1 {
     margin-left: 200px;
   }
 

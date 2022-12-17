@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Contact Us - Gamehub</title>
     <script
@@ -16,109 +16,197 @@
       rel="stylesheet"
     />
     <!-- Hotjar Tracking Code for my site -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:3286534,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3286534, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
     <header>
-        <section class="hamburgermenu">
-          <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-          <input type="checkbox" id="hamburger-menu"/>
-          <div class="hamburger-open">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="gamelist.html">List of Games</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="cart.html">Cart</a></li>
-            </ul>
-          </div>
-        </section>
-        <a href="index.html"
+      <section class="hamburgermenu">
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu" />
+        <div class="hamburger-open">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gamelist.html">List of Games</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+      </section>
+      <a href="index.html"
         ><img
           alt="Gamehub logo"
           src="images/Logo/GameHub_text.svg"
           class="logo"
       /></a>
-        <div class="searchform">
-          <form action="" class="searchbar">
-            <input type="text" placeholder="Search for games" name="q" />
-            <button type="submit">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
+      <div class="searchform">
+        <form action="" class="searchbar" aria-label="Search Bar">
+          <input
+            type="text"
+            placeholder="Search for games"
+            name="q"
+            aria-label="Search bar input"
+          />
+          <button type="submit" aria-label="search button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <nav>
+        <ul class="nav_links">
+          <li>
+            <a href="index.html" aria-label="Home"
+              ><i class="fa-solid fa-house"></i
+            ></a>
+          </li>
+          <li>
+            <a href="contact.html" aria-label="Contact"
+              ><i class="fa-brands fa-rocketchat"></i
+            ></a>
+          </li>
+          <li>
+            <a href="gamelist.html" aria-label="Games"
+              ><i class="fa-solid fa-gamepad"></i
+            ></a>
+          </li>
+          <li>
+            <a href="cart.html" aria-label="Shopping Cart"
+              ><i class="fa-solid fa-basket-shopping"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contact">
+      <div class="contact-form">
+        <h1>Contact us</h1>
+        <hr />
+        <div class="errorbox"> 
+          <div class="error" id="name-error">Name required!</div>
+          <div class="error" id="email-error">Email required!</div>
+          <div class="error" id="message-error">Message required!</div>
         </div>
-        <nav>
-          <ul class="nav_links">
-            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></i></li>
-            <li>
-              <a href="contact.html"><i class="fa-brands fa-rocketchat"></i></a>
-            </li>
-            <li><a href="gamelist.html"><i class="fa-solid fa-gamepad"></i></a></li>
-            <li><a href="cart.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
-          </ul>
-        </nav>
-      </header>
-      <main class="contact">
-        <div class="contact-form">
-        <h2>Contact us</h2>
-        <hr>
-        <form method="POST">
+        <form method="POST" id="form-contact">
           <div class="form-wrapper">
             <section>
-              <i class="fa-solid fa-user"><label for="name"></label>
-              <input type="text" id="name" name="name" placeholder="Name *" /></i>
-              <i class="fa-solid fa-envelope"><label for="email"></label>
-              <input type="email" id="email" name="Email" placeholder="Email *"/></i>
+              <i class="fa-solid fa-user" aria-label="icon">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Name *"
+                  aria-label="Name input"
+              /></i>
+              <i class="fa-solid fa-envelope" aria-label="icon">
+                <input
+                  type="email"
+                  id="email"
+                  name="Email"
+                  placeholder="Email *"
+                  aria-label="Email input"/></i>
             </section>
             <section>
-              <label for="message"></label>
-              <textarea id="message" name="message" placeholder="Message *"></textarea>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Message *"
+                aria-label="message input"
+              ></textarea>
             </section>
           </div>
-          <input type="submit" value="Submit" class="cta2" />
+          <input
+            type="submit"
+            value="Submit"
+            class="cta2"
+            aria-label="Submit message"
+          />
         </form>
       </div>
       <div class="sell-form">
         <h2>Sell form</h2>
-        <hr>
-        <form method="POST">
+        <hr />
+        <div class="errorbox"> 
+          <div class="error" id="game-name-error">Name required!</div>
+          <div class="error" id="game-email-error">Email required!</div>
+          <div class="error" id="game-error">Game required!</div>
+          <div class="error" id="platform-error">Platform required!</div>
+        </div>
+        <form method="POST" id="form-contact">
           <div class="form-wrapper">
             <section>
-              <i class="fa-solid fa-user"><label for="name"></label>
-              <input type="text" id="name" name="name" placeholder="Name *"/></i>
-              <i class="fa-solid fa-envelope"><label for="email"></label>
-              <input type="email" id="email" name="Email" placeholder="Email *"/></i>
-              <i class="fa-solid fa-gamepad">
-              <label for="game"></label>
-              <input type="text" id="game" name="game" placeholder="Game Title *"/></i>
-              <i class="fa-solid fa-gamepad"><label for="Platform"></label>
-              <input type="text" id="Platform" name="Platform" placeholder="Game Platform *"/></i>
+              <i class="fa-solid fa-user" aria-label="icon"></i>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Name *"
+                  aria-label="Name input"
+              /></i>
+              <i class="fa-solid fa-envelope" aria-label="icon">
+                <input
+                  type="email"
+                  id="email"
+                  name="Email"
+                  placeholder="Email *"
+                  aria-label="Email input"
+              /></i>
+              <i class="fa-solid fa-gamepad" aria-label="icon">
+                <input
+                  type="text"
+                  id="game"
+                  name="game"
+                  placeholder="Game Title *"
+                  aria-label="Game title input"
+              /></i>
+              <i class="fa-solid fa-gamepad" aria-label="icon">
+                <input
+                  type="text"
+                  id="platform"
+                  name="Platform"
+                  placeholder="Game Platform *"
+                  aria-label="Game platform input"
+              /></i>
             </section>
             <section>
-              <label for="message"></label>
-              <textarea id="message" name="message" placeholder="Additional info"></textarea>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Additional info"
+                aria-label="message input"
+              ></textarea>
             </section>
           </div>
-          <input type="submit" value="Submit" class="cta3" />
+          <input
+            type="submit"
+            value="Submit"
+            class="cta3"
+            aria-label="Submit game"
+          />
         </form>
       </div>
-      </main>
-      <footer>
-        <hr class="solid" />
-        <section class="Contactinfo">
-          <a><i class="fa-solid fa-phone fa-border"></i>1-234-567-8910</a>
-          <a><i class="fa-solid fa-envelope fa-border"></i>support@gamehub.com</a>
-          <a><i class="fa-solid fa-arrow-up fa-border"></a></i>
-        </section>
-      </footer>
+    </main>
+    <footer>
+      <hr class="solid" />
+      <section class="Contactinfo">
+        <a><i class="fa-solid fa-phone fa-border"></i>1-234-567-8910</a>
+        <a><i class="fa-solid fa-envelope fa-border"></i>support@gamehub.com</a>
+        <a><i class="fa-solid fa-arrow-up fa-border"></i></a>
+      </section>
+    </footer>
   </body>
+  <script src="js/form.js"></script>
 </html>

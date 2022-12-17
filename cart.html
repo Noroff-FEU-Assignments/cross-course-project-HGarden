@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Cart - Gamehub</title>
     <script
@@ -16,110 +16,243 @@
       rel="stylesheet"
     />
     <!-- Hotjar Tracking Code for my site -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:3286534,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3286534, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
     <header>
-        <section class="hamburgermenu">
-          <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-          <input type="checkbox" id="hamburger-menu"/>
-          <div class="hamburger-open">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="gamelist.html">List of Games</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="cart.html">Cart</a></li>
-            </ul>
-          </div>
-        </section>
-        <a href="index.html"
+      <section class="hamburgermenu">
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu" />
+        <div class="hamburger-open">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gamelist.html">List of Games</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+      </section>
+      <a href="index.html"
         ><img
           alt="Gamehub logo"
           src="images/Logo/GameHub_text.svg"
           class="logo"
       /></a>
-        <div class="searchform">
-          <form action="" class="searchbar">
-            <input type="text" placeholder="Search for games" name="q" />
-            <button type="submit">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
-        </div>
-        <nav>
-          <ul class="nav_links">
-            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></i></li>
-            <li>
-              <a href="contact.html"><i class="fa-brands fa-rocketchat"></i></a>
-            </li>
-            <li><a href="gamelist.html"><i class="fa-solid fa-gamepad"></i></a></li>
-            <li><a href="cart.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
-          </ul>
-        </nav>
-      </header>
-      <main class="checkout">
-        <h2>Checkout</h2>
-        <hr class="solid6">
-          <div class="cartlayout">
-            <div class="shipping">
-              <div><h3>Shipping</h3></div>
-             <div> <label for="name"></label>
-              <input type="text" id="fullname" name="fullname" placeholder="Full Name "/></div>
-             <div> <label for="Address"></label>
-              <input type="text" id="Address" name="Address" placeholder="Address "/></div>
-             <div> <label for="City"></label>
-              <input type="text" id="City" name="City" placeholder="City "/></div>
-             <div> <label for="Zip code"></label>
-              <input type="text" id="Zip-code" name="Zip-code" placeholder="Zip code "/></div>
-             <div> <label for="country"></label>
-              <input type="text" id="country" name="country" placeholder="Country"/></div>
-             <div> <label for="Email"></label>
-              <input type="email" id="email" name="email" placeholder="Email"/></div>
-            </div>
-            <div class="payment">
-              <div><h3>Payment Method</h3></div>
-              <div class="paypallogo"><a href="checkoutcomplete.html"><img src="images/Logo/paypal.svg" alt="paypal logo"></a></div>
-              <div class="or">or</div>
-              <div><i class="fa-brands fa-cc-visa"></i><i class="fa-brands fa-cc-mastercard"></i><input type="text" id="CardNumber" name="Card Number" placeholder="1111 2222 3333 4444"/></div>
-              <div><input type="text" id="Expiration" name="Expiration" placeholder="MM/YYYY"/></div>
-              <div><input type="text" id="CCV" name="CCV" placeholder="CCV"/></div>
-              <div><label for="name"></label>
-                <input type="text" id="firstname" name="name" placeholder="First Name "/></div>
-              <div><label for="name"></label>
-                <input type="text" id="lastname" name="name" placeholder="Last Name "/></div>
-              <div class="cta4"><a href="checkoutcomplete.html">Place Order</a></div>
-            </div>
-            <div class="shopping-cart">
-              <div><h3>Shopping Cart</h3></div>
-              <div class="lightfont"><p>Subtotal</p><p>Shipping Fee</p><p>Tax</p></div>
-              <div><p>$55</p><p>Free</p><p>$4.19</p></div>
-              <div><h4>Order Total</h4></div>
-              <div><p>$59.99</p></div>
-              <div><p>Item QTY Price</p></div>
-              <div><hr class="solid7"></div>
-              <div class="shopping-img"><a href="productdetail.html"><img src="images/GameCovers/GameHub_covers6.jpg" alt="gamecover of Space War"></a><p class="textbold">Space War</p><p>Platform: Playbox</p><p>Condition New</p></div>
-              <div><input type="text" id="amount"></div>
-              <div><p>$59.99</p></div>
-            </div>
+      <div class="searchform">
+        <form action="" class="searchbar" aria-label="Search Bar">
+          <input
+            type="text"
+            placeholder="Search for games"
+            name="q"
+            aria-label="Search bar input"
+          />
+          <button type="submit" aria-label="search button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <nav>
+        <ul class="nav_links">
+          <li>
+            <a href="index.html" aria-label="Home"
+              ><i class="fa-solid fa-house"></i
+            ></a>
+          </li>
+          <li>
+            <a href="contact.html" aria-label="Contact"
+              ><i class="fa-brands fa-rocketchat"></i
+            ></a>
+          </li>
+          <li>
+            <a href="gamelist.html" aria-label="Games"
+              ><i class="fa-solid fa-gamepad"></i
+            ></a>
+          </li>
+          <li>
+            <a href="cart.html" aria-label="Shopping Cart"
+              ><i class="fa-solid fa-basket-shopping"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="checkout">
+      <h1>Checkout</h1>
+      <hr class="solid6" />
+      <div class="errorbox">
+        <div class="error" id="name-error">Name required!</div>
+        <div class="error" id="email-error">Email required!</div>
+        <div class="error" id="address-error">Address required!</div>
+        <div class="error" id="city-error">City required!</div>
+        <div class="error" id="zipcode-error">Zip-Code required!</div>
+        <div class="error" id="country-error">country required!</div>
+      </div>
+      <div class="cartlayout">
+        <div class="shipping">
+          <div><h3>Shipping</h3></div>
+          <div>
+            <input
+              type="text"
+              id="name"
+              name="fullname"
+              placeholder="Full Name"
+              aria-label="Input Full Name"
+            />
           </div>
-      </main>
-      <footer>
-        <hr class="solid" />
-        <section class="Contactinfo">
-          <a><i class="fa-solid fa-phone fa-border"></i>1-234-567-8910</a>
-          <a><i class="fa-solid fa-envelope fa-border"></i>support@gamehub.com</a>
-          <a><i class="fa-solid fa-arrow-up fa-border"></a></i>
-        </section>
-      </footer>
+          <div>
+            <input
+              type="text"
+              id="address"
+              name="Address"
+              placeholder="Address "
+              aria-label="Input Address"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              id="city"
+              name="City"
+              placeholder="City "
+              aria-label="Input City"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              id="zip-code"
+              name="Zip-code"
+              placeholder="Zip code "
+              aria-label="Input Zip Code"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              id="country"
+              name="country"
+              placeholder="Country"
+              aria-label="Input Full Country"
+            />
+          </div>
+          <div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              aria-label="Input Email"
+            />
+          </div>
+        </div>
+        <div class="payment">
+          <div><h3>Payment Method</h3></div>
+          <div class="paypallogo"></div>
+          <div class="or">or</div>
+          <div>
+            <i class="fa-brands fa-cc-visa"></i
+            ><i class="fa-brands fa-cc-mastercard"></i
+            ><input
+              type="text"
+              id="CardNumber"
+              name="Card Number"
+              placeholder="1111 2222 3333 4444"
+              aria-label="Input Card Number"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              id="expiration"
+              name="Expiration"
+              placeholder="MM/YYYY"
+              aria-label="Input Card Expiration date"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              id="CCV"
+              name="CCV"
+              placeholder="CCV"
+              aria-label="Input CCV"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="First Name "
+              aria-label="Input Card First Name"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Last Name "
+              aria-label="Input Card Last Name"
+            />
+          </div>
+          <div class="cta4"></div>
+        </div>
+        <div class="shopping-cart">
+          <div><h3>Shopping Cart</h3></div>
+          <div class="lightfont">
+            <p>Subtotal</p>
+            <p>Shipping Fee</p>
+            <p>Tax</p>
+          </div>
+          <div>
+            <p>$55</p>
+            <p>Free</p>
+            <p>$4.19</p>
+          </div>
+          <div><h4>Order Total</h4></div>
+          <div class="price"></div>
+          <div><p>Item QTY Price</p></div>
+          <div><hr class="solid7" /></div>
+          <div class="shopping-img"></div>
+          <div>
+            <input type="text" id="amount" aria-label="Amount of product" />
+          </div>
+          <div class="price"></div>
+        </div>
+      </div>
+      <div class="errorbox">
+        <div class="error" id="card-error">Card required!</div>
+        <div class="error" id="expiration-error">Expiration date required!</div>
+        <div class="error" id="CCV-error">CCV required!</div>
+        <div class="error" id="name-error">Name required!</div>
+      </div>
+    </main>
+    <footer>
+      <hr class="solid" />
+      <section class="Contactinfo">
+        <a><i class="fa-solid fa-phone fa-border"></i>1-234-567-8910</a>
+        <a><i class="fa-solid fa-envelope fa-border"></i>support@gamehub.com</a>
+        <a><i class="fa-solid fa-arrow-up fa-border"></i></a>
+      </section>
+    </footer>
   </body>
+  <script src="js/components/games.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/form.js"></script>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Game Catalogue - Gamehub</title>
     <script
@@ -16,171 +16,164 @@
       rel="stylesheet"
     />
     <!-- Hotjar Tracking Code for my site -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:3286534,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3286534, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
     <header>
-        <section class="hamburgermenu">
-          <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-          <input type="checkbox" id="hamburger-menu"/>
-          <div class="hamburger-open">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="gamelist.html">List of Games</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="cart.html">Cart</a></li>
-            </ul>
-          </div>
-        </section>
-        <a href="index.html"
+      <section class="hamburgermenu">
+        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+        <input type="checkbox" id="hamburger-menu" />
+        <div class="hamburger-open">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gamelist.html">List of Games</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+      </section>
+      <a href="index.html"
         ><img
           alt="Gamehub logo"
           src="images/Logo/GameHub_text.svg"
           class="logo"
       /></a>
-        <div class="searchform">
-          <form action="" class="searchbar">
-            <input type="text" placeholder="Search for games" name="q" />
-            <button type="submit">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
+      <div class="searchform">
+        <form action="" class="searchbar" aria-label="Search Bar">
+          <input
+            type="text"
+            placeholder="Search for games"
+            name="q"
+            aria-label="Search bar input"
+          />
+          <button type="submit" aria-label="search button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+      <nav>
+        <ul class="nav_links">
+          <li>
+            <a href="index.html" aria-label="Home"
+              ><i class="fa-solid fa-house"></i
+            ></a>
+          </li>
+          <li>
+            <a href="contact.html" aria-label="Contact"
+              ><i class="fa-brands fa-rocketchat"></i
+            ></a>
+          </li>
+          <li>
+            <a href="gamelist.html" aria-label="Games"
+              ><i class="fa-solid fa-gamepad"></i
+            ></a>
+          </li>
+          <li>
+            <a href="cart.html" aria-label="Shopping Cart"
+              ><i class="fa-solid fa-basket-shopping"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="gameheader">
+        <h1>List of Games</h1>
+        <div class="sortby">
+          <h4>
+            Sort by: Newest releases<i class="fa-solid fa-angle-down"></i>
+          </h4>
         </div>
-        <nav>
-          <ul class="nav_links">
-            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></i></li>
-            <li>
-              <a href="contact.html"><i class="fa-brands fa-rocketchat"></i></a>
-            </li>
-            <li><a href="gamelist.html"><i class="fa-solid fa-gamepad"></i></a></li>
-            <li><a href="cart.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <section class="gameheader">
-          <h2>List of Games</h2>
-          <div class="sortby">
-            <h4>Sort by: Newest releases<i class="fa-solid fa-angle-down"></i></h4>
-          </div>
-          <hr class="solid4" />
-        </section>
-        <section class="Sidebar">
-          <hr class="solid2" />
-          <h3>Availability</h3>
-          <ul>
-            <li><input type="checkbox"><p>In stock</p></li>
-            <li><input type="checkbox"><p>Coming Soon</p></li>
-          </ul>
-          <hr class="solid3" />
-          <h3>Category</h3>
-          <ul>
-            <li><input type="checkbox"><p>Fantasy</p></li>
-            <li><input type="checkbox"><p>Shooter</p></li>
-            <li><input type="checkbox"><p>Racing</p></li>
-            <li><input type="checkbox"><p>Sports</p></li>
-            <li><input type="checkbox"><p>Adventure</p></li>
-            <li><input type="checkbox"><p>Fighting</p></li>
-          </ul>     
-          <hr class="solid3" />
-          <h3>Marketplace</h3>
-          <ul>
-            <li><input type="checkbox"><p>Mint Condition</p></li>
-            <li><input type="checkbox"><p>Slightly Used</p></li>
-            <li><input type="checkbox"><p>Used</p></li>
-            <li><input type="checkbox"><p>Poor Condition</p></li>
-          </ul>
-        </section>
-        <section class="Gamelist">
-           <div><a href="productdetail.html"><img
-              alt="Ping Pong Championship"
-              src="images/GameCovers/GameHub_covers.jpg"
-              class="cover"></a>
-              <h4>$59.99</h4>
-              <p>Ping Pong - Playbox</p>
-            </div>
-           <div><a href="productdetail.html"><img
-              alt="Super Duper"
-              src="images/GameCovers/GameHub_covers2.jpg"
-              class="cover"></a>
-              <h4>$59.99</h4>
-              <p>Super Duper - Playbox</p>
-            </div>
-            <div><a href="productdetail.html"><img
-              alt="Black"
-              src="images/GameCovers/GameHub_covers3.jpg"
-              class="cover"></a>
-              <h4>$59.99</h4>
-              <p>Black - Playbox</p>
-            </div>
-            <div><a href="productdetail.html"><img
-              alt="Furious"
-              src="images/GameCovers/GameHub_covers4.jpg"
-              class="cover"></a>
-              <h4>$59.99</h4>
-              <p>Furious - Playbox</p>
-            </div>
-            <div><a href="productdetail.html"><img
-              alt="Assassin"
-              src="images/GameCovers/GameHub_covers5.jpg"
-              class="cover"></a>
-              <h4>$59.99</h4>
-              <p>Assassin - Playbox</p>
-            </div>
-            <div><a href="productdetail.html"><img
-              alt="Space War"
-              src="images/GameCovers/GameHub_covers6.jpg"
-              class="cover"></a>
-              <h4>$59.99</h4>
-              <p>Space war - Playbox</p>
-            </div>
-            <div><a href="productdetail.html"><img
-              alt="Racing"
-              src="images/GameCovers/GameHub_covers7.jpg"
-              class="cover"></a>
-              <h4>$59.99</h4>
-              <p>Racing - Playbox</p>
-            </div>
-            <div><a href="productdetail.html"><img
-              alt="Boxer"
-              src="images/GameCovers/GameHub_covers8.jpg"
-              class="cover"></a>
-              <h4>$59.99</h4>
-              <p>Boxer - Playbox</p>
-            </div>
-            <div><a href="productdetail.html"><img
-              alt="Cyberpunk"
-              src="images/GameCovers/GameHub_covers9.jpg"
-              class="cover"></a>
-              <h4>$59.99</h4>
-              <p>Cyberpunk - Playbox</p>
-            </div>
-            <div><a href="productdetail.html"><img
-              alt="Forge Legend"
-              src="images/GameCovers/GameHub_covers10.jpg"
-              class="cover"></a>
-              <h4>$59.99</h4>
-              <p>Forge Legend - Playbox</p>
-            </div>
-        </section>
-      </main>
-      <footer>
-        <hr class="solid" />
-        <section class="Contactinfo">
-          <a><i class="fa-solid fa-phone fa-border"></i>1-234-567-8910</a>
-          <a><i class="fa-solid fa-envelope fa-border"></i>support@gamehub.com</a>
-          <a><i class="fa-solid fa-arrow-up fa-border"></a></i>
-        </section>
-      </footer>
+        <hr class="solid4" />
+      </section>
+      <section class="Sidebar">
+        <hr class="solid2" />
+        <h3>Availability</h3>
+        <ul>
+          <li>
+            <input type="checkbox" aria-label="In stock checkbox" />
+            <p>In stock</p>
+          </li>
+          <li>
+            <input type="checkbox" aria-label="Coming soon checkbox" />
+            <p>Coming Soon</p>
+          </li>
+        </ul>
+        <hr class="solid3" />
+        <h3>Category</h3>
+        <ul>
+          <li>
+            <input type="checkbox" aria-label="Fantasy checkbox" />
+            <p>Fantasy</p>
+          </li>
+          <li>
+            <input type="checkbox" aria-label="Shooter checkbox" />
+            <p>Shooter</p>
+          </li>
+          <li>
+            <input type="checkbox" aria-label="Racing checkbox" />
+            <p>Racing</p>
+          </li>
+          <li>
+            <input type="checkbox" aria-label="Sports checkbox" />
+            <p>Sports</p>
+          </li>
+          <li>
+            <input type="checkbox" aria-label="Adventure checkbox" />
+            <p>Adventure</p>
+          </li>
+          <li>
+            <input type="checkbox" aria-label="Fighting checkbox" />
+            <p>Fighting</p>
+          </li>
+        </ul>
+        <hr class="solid3" />
+        <h3>Marketplace</h3>
+        <ul>
+          <li>
+            <input type="checkbox" aria-label="Mint condition checkbox" />
+            <p>Mint Condition</p>
+          </li>
+          <li>
+            <input type="checkbox" aria-label="Slightly Used checkbox" />
+            <p>Slightly Used</p>
+          </li>
+          <li>
+            <input type="checkbox" aria-label="Used checkbox" />
+            <p>Used</p>
+          </li>
+          <li>
+            <input type="checkbox" aria-label="Poor Condition checkbox" />
+            <p>Poor Condition</p>
+          </li>
+        </ul>
+      </section>
+      <section class="Gamelist"></section>
+    </main>
+    <footer>
+      <hr class="solid" />
+      <section class="Contactinfo">
+        <a><i class="fa-solid fa-phone fa-border"></i>1-234-567-8910</a>
+        <a><i class="fa-solid fa-envelope fa-border"></i>support@gamehub.com</a>
+        <a><i class="fa-solid fa-arrow-up fa-border"></i></a>
+      </section>
+    </footer>
   </body>
+  <script src="js/components/games.js"></script>
+  <script src="js/components/gamelist.js"></script>
 </html>

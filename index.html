@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Home Page - Gamehub</title>
     <script
@@ -16,22 +16,33 @@
       rel="stylesheet"
     />
     <!-- Hotjar Tracking Code for my site -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:3286534,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3286534, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
     <header>
       <section class="hamburgermenu">
-        <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-        <input type="checkbox" id="hamburger-menu"/>
+        <label for="hamburger-menu" aria-label="hamburger menu"
+          ><i class="fas fa-bars"></i
+        ></label>
+        <input
+          type="checkbox"
+          id="hamburger-menu"
+          aria-label="Hamburger open"
+        />
         <div class="hamburger-open">
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -43,27 +54,46 @@
         </div>
       </section>
       <a href="index.html"
-      ><img
-        alt="Gamehub logo"
-        src="images/Logo/GameHub_text.svg"
-        class="logo"
-    /></a>
+        ><img
+          alt="Gamehub logo"
+          src="images/Logo/GameHub_text.svg"
+          class="logo"
+      /></a>
       <div class="searchform">
-        <form action="" class="searchbar">
-          <input type="text" placeholder="Search for games" name="q" />
-          <button type="submit">
+        <form action="" class="searchbar" aria-label="Search Bar">
+          <input
+            type="text"
+            placeholder="Search for games"
+            name="q"
+            aria-label="Search bar input"
+          />
+          <button type="submit" aria-label="search button">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
       </div>
       <nav>
         <ul class="nav_links">
-          <li><a href="index.html"><i class="fa-solid fa-house"></i></a></i></li>
           <li>
-            <a href="contact.html"><i class="fa-brands fa-rocketchat"></i></a>
+            <a href="index.html" aria-label="Home"
+              ><i class="fa-solid fa-house"></i
+            ></a>
           </li>
-          <li><a href="gamelist.html"><i class="fa-solid fa-gamepad"></i></a></li>
-          <li><a href="cart.html"><i class="fa-solid fa-basket-shopping"></i></a></li>
+          <li>
+            <a href="contact.html" aria-label="Contact"
+              ><i class="fa-brands fa-rocketchat"></i
+            ></a>
+          </li>
+          <li>
+            <a href="gamelist.html" aria-label="Games"
+              ><i class="fa-solid fa-gamepad"></i
+            ></a>
+          </li>
+          <li>
+            <a href="cart.html" aria-label="Shopping Cart"
+              ><i class="fa-solid fa-basket-shopping"></i
+            ></a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -141,7 +171,7 @@
       <section class="Contactinfo">
         <a><i class="fa-solid fa-phone fa-border"></i>1-234-567-8910</a>
         <a><i class="fa-solid fa-envelope fa-border"></i>support@gamehub.com</a>
-        <a><i class="fa-solid fa-arrow-up fa-border"></a></i>
+        <a><i class="fa-solid fa-arrow-up fa-border"></i></a>
       </section>
     </footer>
   </body>
