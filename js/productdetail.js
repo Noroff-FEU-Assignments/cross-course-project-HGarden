@@ -8,15 +8,18 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-const game = Games[id];
+const APIurl = "https://mhagenflowerpower.one/wp-json/wc/store/products/" + id;
 
-console.log(game);
+async function getGame(url) {
+  const response = await fetch(url);
+  const game = await response.json();
 
-function createHTML() {
   header.innerHTML += `<h1>${game.name}</h1>`;
-  gameImage.innerHTML += `<img alt="Space War" src=${game.image} class="cover"/>`;
-  gameDescription.innerHTML += `<h2>Game description</h2> <p>${game.description}</p> <p>${game.description}</p>`;
-  addToCart.innerHTML += `<p>$59.99</p> <a href="cart.html?=${game.id}" class="addtocart-button">Add to cart</a>`;
+  gameImage.innerHTML += `<img alt=${game.images[0].alt} src=${game.images[0].src} class="cover"/>`;
+  gameDescription.innerHTML += `<h2>Game description</h2> <p>${game.description}</p> <p>Condition: ${game.attributes[1].terms[0].name}</p>`;
+  addToCart.innerHTML += `<p>$59.99</p> <a href="cart.html?id=${game.id}" class="addtocart-button">Add to cart</a>`;
+
+  console.log(game);
 }
 
-createHTML();
+getGame(APIurl);
