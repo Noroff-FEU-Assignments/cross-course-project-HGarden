@@ -1,4 +1,4 @@
-const APIurl = "https://mhagenflowerpower.one/wp-json/wc/store/products";
+const APIurl = "https://mhagenflowerpower.one/wp-json/wc/store/products/";
 const featuredGames = document.querySelector(".coverlist");
 
 async function getGames(url) {

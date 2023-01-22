@@ -17,7 +17,7 @@ async function getGame(url) {
   header.innerHTML += `<h1>${game.name}</h1>`;
   gameImage.innerHTML += `<img alt=${game.images[0].alt} src=${game.images[0].src} class="cover"/>`;
   gameDescription.innerHTML += `<h2>Game description</h2> <p>${game.description}</p> <p>Condition: ${game.attributes[1].terms[0].name}</p>`;
-  addToCart.innerHTML += `<p>$59.99</p> <a href="cart.html?id=${game.id}" class="addtocart-button">Add to cart</a>`;
+  addToCart.innerHTML += `<p>${game.price_html}</p> <a href="cart.html?id=${game.id}" class="addtocart-button">Add to cart</a>`;
 
   console.log(game);
 }

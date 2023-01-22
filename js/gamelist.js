@@ -8,18 +8,9 @@ async function getGames(url) {
   for (let i = 0; i < products.length; i++) {
     const games = products[i];
 
-    let priceFixed = "";
-    let price = games.prices.price;
-    priceFixed = price;
-
-    let insertIndex = 2;
-    let firstPart = priceFixed.slice(0, insertIndex);
-    let secondPart = priceFixed.slice(insertIndex);
-    let finalPrice = firstPart.concat(".", secondPart);
-
     console.log(games);
 
-    link.innerHTML += `<div><a href="productdetail.html?id=${games.id}"><img alt=${games.images[0].alt} src=${games.images[0].src} class="cover"/></a><h4>$${finalPrice}</h4><p>${games.name} - ${games.attributes[0].terms[0].name}  </p></div>`;
+    link.innerHTML += `<div><a href="productdetail.html?id=${games.id}"><img alt=${games.images[0].alt} src=${games.images[0].src} class="cover"/></a><h4>${games.price_html}</h4><p>${games.name} - ${games.attributes[0].terms[0].name}  </p></div>`;
   }
 }
 getGames(APIurl);

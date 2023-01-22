@@ -23,8 +23,8 @@ async function getGame(url) {
   }
 
   function createCart() {
-    price.innerHTML += `<p>$59.99</p>`;
-    price2.innerHTML += `<p>$59.99</p>`;
+    price.innerHTML += `<p>${game.price_html}</p>`;
+    price2.innerHTML += `<p>${game.price_html}</p>`;
     gameIMG.innerHTML += `<a href="productdetail.html?id=${game.id}"><img src=${game.images[0].src} alt=${game.images[0].alt}/></a><p class="textbold">${game.name}</p><p>Platform: ${game.attributes[0].terms[0].name}</p><p>Condition:  ${game.attributes[1].terms[0].name}</p>`;
   }
 
