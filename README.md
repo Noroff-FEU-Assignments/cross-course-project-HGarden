@@ -1,12 +1,12 @@
 # Cross course project
 
-A simple overview of the use/purpose of the project.
+![gamehub](https://user-images.githubusercontent.com/101638949/222918776-46079b73-1650-4bcf-809a-d1af0494132e.PNG)
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+For this project i was asked to create a webpage for one of three options, i chose gamehub. Been working on this over multiple classes.
 
-You can add some bullet points if you'd like to:
+
 
 - List item 1
 - List item 2
@@ -16,8 +16,9 @@ You can add some bullet points if you'd like to:
 
 You can list a the tech stack that you've used over here
 
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- HTML
+- CSS
+- JS
 
 ## Getting Started
 
