@@ -6,11 +6,13 @@
 
 For this project i was asked to create a webpage for one of three options, i chose gamehub. Been working on this over multiple classes.
 
+Order on what i have worked on:
 
-
-- List item 1
-- List item 2
-- List item 3
+- Design
+- Html
+- CSS
+- JS
+- wordpress rest api
 
 ## Built With
 
@@ -19,6 +21,7 @@ You can list a the tech stack that you've used over here
 - HTML
 - CSS
 - JS
+- wordpress Rest API 
 
 ## Getting Started
 
