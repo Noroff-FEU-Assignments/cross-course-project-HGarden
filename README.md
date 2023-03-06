@@ -32,37 +32,31 @@ This is where you list how to get the project started. It typically just include
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+gh repo clone Noroff-FEU-Assignments/cross-course-project-HGarden
 ```
 
 2. Install the dependencies:
 
-```
-npm install
-```
+- A code editor of your choice
+- PHP development environment https://www.apachefriends.org or locale
+- Wordpress 
+- A webhost to host the wordpress Rest API
+
 
 ### Running
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
+To get the page up and running you will need a way to either run the page locally or use an external provider like netlify
 
-To run the app, run the following commands:
+Simply link netlify to your repo and it should be up and running.
 
-```bash
-npm run start
-```
+To get the rest api to work you can replace the current api with your own wordpress api.
 
 ## Contributing
-
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+If you plan to contribute to the project be sure to open a pull request so i cen review the code.
 
 ## Contact
 
 This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
-[My Twitter page](www.twitter.com)
+[My LinkedIn page](https://www.linkedin.com/in/marius-hagen-b997a5234/)
 
-[My LinkedIn page](www.linkedin.com)
-
-## Acknowledgments
-
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
