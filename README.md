@@ -16,8 +16,6 @@ Order on what i have worked on:
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
 - HTML
 - CSS
 - JS
@@ -27,7 +25,6 @@ You can list a the tech stack that you've used over here
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
 
 1. Clone the repo:
 
